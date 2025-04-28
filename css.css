@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #add8e6;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.contenair_img1 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.5);
+}
+
+.contenu_img1 {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+.contenu_img1 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contenu_img1 p {
+    font-size: 1.2rem;
+}
+
+.contenair_img2 {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background: #f0f8ff;
+}
+
+.image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.amci, .ambassade, .tribunal {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.amci:hover, .ambassade:hover, .tribunal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.amci a, .ambassade a, .tribunal a {
+    color: #004080;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.contenair_img2 a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.image3 {
+    width: 50%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bienvenue {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main {
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 1000px;
+}
+
+.propos, .features, .cta {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 10px;
+}
+
+.contact-section {
+    background-color: #e6f0ff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #004080;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact input,.contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.contact button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #0066cc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact{
+        padding: 20px;
+    }
+
+    .contenu_img1 h1 {
+        font-size: 8vw;
+    }
+
+    .amci, .ambassade, .tribunal {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .image3 {
+        width: 90%;
+    }
+
+    header, footer {
+        font-size: 14px;
+    }
+}
